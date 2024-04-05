@@ -23,32 +23,26 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 ## PROGRAM
-
-DEVELOPED BY:VAISHNAVIDEVI V
-REG NO:212223040230
-```
-models.py
+## models.py:
 from django.db import models
 from django.contrib import admin
-class Employee(models.Model):
-    eid=models.CharField(max_length=20,help_text='Employee_ID')
-    name=models.CharField(max_length=100)
-    salary=models.IntegerField()
-    age=models.IntegerField()
-    email=models.EmailField()
+class Book(models.Model):
+    book_id=models.IntegerField()
+    book_name=models.CharField(max_length=100)
+    page=models.IntegerField()
+    price=models.IntegerField()
+    author=models.CharField(max_length=30)
 
-class EmployeeAdmin(admin.ModelAdmin):
-    list_display=('eid','name','salary','age','email')
 
-admin.py
+class BookAdmin(admin.ModelAdmin):
+    list_display=('book_id','book_name','page','price','author')
+## admin.py:
 from django.contrib import admin
-from .models import Employee,EmployeeAdmin
-admin.site.register(Employee,EmployeeAdmin)
-
-```
+from .models import Book,BookAdmin
+admin.site.register(Book,BookAdmin)
 
 ## OUTPUT
-![EXP-2](https://github.com/vaishnavidevi23013992/ORM/assets/151864235/094350fa-c8d5-4277-b488-5c8f03c4bc57)
+![webb](https://github.com/vaishnavidevi23013992/ORM/assets/151864235/ce7ec008-de1f-44db-8594-39060bfd7381)
 
 
 ## RESULT
