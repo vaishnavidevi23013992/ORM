@@ -6,7 +6,11 @@ To develop a Django application to store and retrieve data from a Book database 
 
 ## Entity Relationship Diagram
 
-Include your ER diagram here
+This is my ER Diagram
+
+
+![WEB](https://github.com/vaishnavidevi23013992/ORM/assets/151864235/28e98abf-2f0c-4c2a-b433-190c6e6592fe)
+
 
 ## DESIGN STEPS
 
@@ -23,6 +27,12 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 ## PROGRAM
+
+DEVELOPER NAME : VAISHNAVIDEVI V
+
+REGISTER NUMBER: 212223040230
+
+
 ## models.py:
 ```
 from django.db import models
